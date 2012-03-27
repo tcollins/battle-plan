@@ -1,0 +1,12 @@
+I am going to attempt to make a browser game
+using craftyjs that will be a simple battle game, but the game
+will be controlled by a program written by the player.
+
+
+
+---- some helpful git notes (I'm new to git)
+add -> git add * (or filename)
+then
+commit -> git commit -m "msg"
+then
+push to server -> git push orgin master
