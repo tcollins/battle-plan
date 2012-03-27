@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Awesome Game</title>
+        <title>Battle Plan</title>
         <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
         <script src="js/crafty-min.js" type="text/javascript"></script>
+
         <script src="js/battle-plan.js" type="text/javascript"></script>
+        <script src="js/components/slide.js" type="text/javascript"></script>
     </head>
     <body>
-
+	<button id="test">Click Me</button>
 		<script>
 			// When the DOM has loaded
 			$(document).ready(function() {
 				bplan.init();
+
+				$('#test').click(function(){
+					// UP_ARROW: [0,-1], DOWN_ARROW: [0,1],   RIGHT_ARROW: [1,0],  LEFT_ARROW: [-1,0],
+					var direction = [1,0];
+					bplan.player.trigger('Slide',direction);
+				});
+
+
+
+
 			});
 		</script>
 	 </body>
