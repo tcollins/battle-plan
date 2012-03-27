@@ -9,4 +9,4 @@ add -> git add * (or filename)
 then
 commit -> git commit -m "msg"
 then
-push to server -> git push orgin master
+push to server -> git push origin master
